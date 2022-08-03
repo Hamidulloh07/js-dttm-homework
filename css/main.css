@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+.body {
+  font-family: cursive;
+  font-weight: 400;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1200px;
+}
+
+.demo {
+  background-image: linear-gradient(to right, rgba(207, 111, 108, 0.801), rgb(61, 61, 61));  width: 100%;
+  height: 100vh;
+}
+
+.demo__heading {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.form__div {
+  margin: 0 auto;
+  width: 800px;
+  border-radius:20px ;
+  background-color: rgba(72, 161, 170, 0.622);
+  height: 430px;
+}
+
+.demo__input {
+  color:rgb(56, 56, 56);
+  background-color: bisque;
+  border:none;
+  border-radius: 10px;
+  outline:none;
+  width: 302px;
+  padding: 10px 20px;
+
+}
+
+.demo__select {
+  color:rgb(56, 56, 56);
+  background-color: bisque;
+  border:none;
+  border-radius: 10px;
+  outline:none;
+  width: 300px;
+  padding: 10px 20px;
+
+}

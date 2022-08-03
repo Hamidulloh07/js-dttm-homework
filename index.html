@@ -1,12 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
   <title>Document</title>
+  
 </head>
-<body>
-  <h1>sss</h1>
+<body class="body">
+  <section class="demo ">
+    <div class="container">
+      <div class="demo__inner">
+        <h1 class=" demo__heading  text-white text-center pt-2 mb-5">Imtixon javoblari</h1>
+
+        
+          <div class="form__div ">
+            <form class="demo__form">
+              <div class="d-block ">
+                <label class="d-block  text-white fs-3 text-center pt-2 mb-3" for="text">Balingizni kiriting va universitetingizni tanlang!</label>
+                <input value="" class="d-inline-block ms-5 me-5 demo__input  " id="text" type="text"
+                name="price" autocomplete="off"
+                required>
+                
+                <select required class="d-inline-block ms-5 demo__select  " aria-label="Default select example" >
+                  <option  selected="" hidden="">Universitetingizni tanlang</option>
+                  <option value="Toshkent axborot texnologiya Universiteti">Toshkent axborot texnologiya Universiteti</option>
+                  <option value="Westminster">Westminster</option>
+                  <option value="Islom Universiteti">Islom Universiteti</option>
+                  <option value="Madaniyat instituti">Madaniyat instituti</option>
+                  Toshkent davlat Islom Karimov nomidagi universitet                 </select>
+              </div>
+
+
+            <span class="d-block mt-4">
+              <button type="submit" class="btn btn-primary px-3 ms-5 me-3 py-2 fs-3 text-white demo__button">Submit</button>
+              <button type="reset" class="btn btn-primary px-3 ms-5  py-2 fs-3 text-white demo__button two">Reset</button>
+            </span>
+          </form>
+          <ul class="list-unstyled text-center">
+            <li class="text-warning mt-3 fs-4">Supper kantrakt = 121</li>
+            <li class="text-warning mt-3 fs-4">kantrakt = 140</li>
+            <li class="text-warning mt-3 fs-4">budjetga = 160+</li>
+          </ul>
+          <div>
+            <output class="demo__output  mt-2 fs-3 text-center d-block text-bg-dark"></output>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <script src="./js/app.js"></script>
 </body>
 </html>
