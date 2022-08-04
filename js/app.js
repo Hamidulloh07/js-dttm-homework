@@ -2,46 +2,64 @@ var elForm = document.querySelector(".demo__form");
 var elInput = document.querySelector(".demo__input");
 var elSelect = document.querySelector(".demo__select");
 
-var elOutput = document.querySelector(".demo__output"); 
-var selectValue = (elSelect.value)
+var elOutput = document.querySelector(".demo__output")
+var elText = document.querySelector(".hero")
 
-elForm.addEventListener("submit", function(evt){
+
+elForm.addEventListener("submit", function(evt) {
   evt.preventDefault();
-  
-  var inputValue = (elInput.value)
-  
+  var inputValue = (elInput.value);
+  var selectValue = (elSelect.value);
 
-  if (inputValue >= 0  && inputValue <= 120 ) {
-    // elInput.value = ""
-    elOutput.textContent = " Siz imtixondan ota olmadingiz"
+
+  if (inputValue >= 120 && inputValue <=  139) {
+    elOutput.textContent = "supper kantraktga kirdingiz"
   } 
 
+
+  else if (inputValue >= 140 && inputValue <=  159) {
+    elOutput.textContent = "kantraktga kirdingiz"
+  } 
+
+  
+  
+  else if (inputValue >= 160 && inputValue <= 200) {
+    elOutput.textContent = "siz budjetga kirdingiz";
+  }
+  else if (inputValue > 200) {
+    elOutput.textContent = "chegaralangan bal 200";
+
+  }
+
   else if (inputValue < 0) {
-    elOutput.textContent = "bu musbat son manfiy son kiriting"
+    elOutput.textContent = "manfiy son kiriting"
+
   }
 
-  else if (inputValue <= 140 && inputValue >= 120){
-    elOutput.textContent = "Tabriklaymiz  kantraktga kirdingiz"
+  
+  else if (isNaN(inputValue)) {
+    elOutput.textContent = "son kirit"
   }
-    
 
-  else if (inputValue > 160  && inputValue >= 140){
-    elOutput.textContent = "Tabriklaymiz  budjetga kirdingiz"
-    }
+
+
+
+  else {
+    elOutput.textContent = "siz ota olmadingiz";
+
+  }
+
+
+  if (selectValue) {
+    elText.textContent = ` ${selectValue}`
     
-  else if (isNaN(elInput.value)){
-    elOutput.textContent = "siz son bilan kiritishingiz kerak"
+  } else {
+
   }
   
-  else {
-    // elInput.value = ""
-    elOutput.textContent = "Tabriklaymiz budjetga kirdingiz"
-    if (inputValue >=121) {
+  console.log(`${inputValue}
+${selectValue}`)
+    
+})
 
-    }
-  }
- console.log(`necha bal, ${inputValue} 
-universitet, ${elSelect.value}`
-  ); 
-});
 
